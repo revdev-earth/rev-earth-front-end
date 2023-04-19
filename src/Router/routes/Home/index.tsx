@@ -1,5 +1,4 @@
 import Intro from "./fragments/Intro"
-import Footer from "./fragments/Footer"
 import Section from "./fragments/Section"
 import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
@@ -7,7 +6,7 @@ import { Link } from "react-router-dom"
 export default () => {
   const { t } = useTranslation()
   return (
-    <div className="bg-white dark:bg-black overflow-hidden w-full">
+    <div className="overflow-hidden w-full">
       <Intro />
       <div className="h-28 bg-slate-900" />
       <Section left>
@@ -67,7 +66,6 @@ export default () => {
           </div>
         </Link>
       </Section>
-      <Footer />
     </div>
   )
 }

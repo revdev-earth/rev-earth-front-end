@@ -50,11 +50,10 @@ export default () => {
   // Obtenemos la cadena de caracteres de las estrellas usando el hook useMemo para evitar recalcularla innecesariamente
   const stars = getStars()
 
-  console.log("pasa")
-
   // Creamos los meteoritos cuando el tema cambia a oscuro y los eliminamos cuando cambia a otro tema
   useEffect(() => {
     meteorMaker()
+
     const intervalId = setInterval(() => {
       meteorMaker()
     }, 1000)
@@ -62,12 +61,5 @@ export default () => {
     return () => clearInterval(intervalId)
   }, [theme])
 
-  return (
-    <div
-      className="stars"
-      style={{
-        boxShadow: stars
-      }}
-    />
-  )
+  return <div className="stars" style={{ boxShadow: stars }} />
 }

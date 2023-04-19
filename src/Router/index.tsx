@@ -4,10 +4,11 @@ import { Navigate } from "react-router-dom"
 import MyApp from "./routes/MyApp"
 import Home from "./routes/Home"
 import Dashboard from "./routes/Dashboard"
-import Header from "./fragments/Header"
-import Backgrund from "./fragments/Backgrund"
 import Ideas from "./routes/Ideas"
 import Proyectos from "./routes/Proyectos"
+import Donaciones from "./routes/Donaciones"
+
+import ProxyRoot from "./fragments/ProxyRoot"
 
 export default function () {
   const Perfil = MyApp
@@ -29,15 +30,7 @@ export default function () {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
-        <>
-          <Header />
-          <Backgrund />
-          <div className="min-h-screen min-w-screen dark:bg-emerald-950 flex items-center justify-center">
-            <Outlet />
-          </div>
-        </>
-      ),
+      element: <ProxyRoot />,
       children: [
         {
           index: true,
@@ -55,6 +48,12 @@ export default function () {
           path: "myApp",
           element: <MyApp />
         },
+
+        {
+          path: "donaciones",
+          element: <Donaciones />
+        },
+
         {
           path: "*",
           element: <NotFound />

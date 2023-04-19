@@ -1,10 +1,15 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Modal from "./Modal"
+import { motion } from "framer-motion"
 
 export default function () {
   const contenido = "flex flex-col gap-8 flex-1"
 
   const [isModalOpen, setIsModalOpen] = useState(false)
+
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
 
   const openModal = () => {
     setIsModalOpen(true)
@@ -15,7 +20,11 @@ export default function () {
   }
 
   return (
-    <div className="text-slate-950 dark:text-neutral-100 flex flex-col gap-4 items-center p-5">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="text-slate-950 dark:text-neutral-100 flex flex-col gap-4 items-center p-5"
+    >
       <svg
         width={100}
         height={100}
@@ -141,6 +150,6 @@ export default function () {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
