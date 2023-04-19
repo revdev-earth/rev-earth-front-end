@@ -38,10 +38,10 @@ export default function () {
           <div className="flex flex-col gap-2">
             <h3 className="text-center">Ticket 1 vez</h3>
             <p>
-              "Descubre la emoción de la aventura con nuestros Vale de 1 vez.
+              Descubre la emoción de la aventura con nuestros Vale de 1 vez.
               Experimenta la adrenalina y la emoción de probar algo nuevo en una
               experiencia única que nunca olvidarás. ¡Compra ya tu ticket y vive
-              la aventura!"
+              la aventura!
             </p>
             <a
               className="text-center"
@@ -54,11 +54,11 @@ export default function () {
           <div className="flex flex-col gap-2">
             <h3 className="text-center">Vale Subscripcion</h3>
             <p>
-              "¿Quieres disfrutar de nuestras atracciones durante todo el año?
+              ¿Quieres disfrutar de nuestras atracciones durante todo el año?
               ¡Suscríbete a nuestros Vale de suscripción! Con acceso ilimitado a
               todas nuestras atracciones, podrás disfrutar de la diversión y la
               emoción cada vez que visites nuestro parque. ¡No pierdas la
-              oportunidad de suscribirte ahora!"
+              oportunidad de suscribirte ahora!
             </p>
             <a
               className="text-center"
@@ -71,11 +71,11 @@ export default function () {
           <div className="flex flex-col gap-2">
             <h3 className="text-center">Vale Master</h3>
             <p>
-              "¿Eres un verdadero fanático de la emoción? ¡Nuestros Vale Master
+              ¿Eres un verdadero fanático de la emoción? ¡Nuestros Vale Master
               son para ti! Obtén acceso exclusivo a nuestras atracciones más
               emocionantes, así como a beneficios especiales y ofertas
               exclusivas. ¡Compra ahora tu ticket Master y conviértete en un
-              verdadero maestro de la diversión!"
+              verdadero maestro de la diversión!
             </p>
             <a
               className="text-center"
