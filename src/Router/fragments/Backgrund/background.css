@@ -7,7 +7,7 @@
 
 .meteor {
   z-index: 1000000;
-  height: 1px;
+  height: 3px;
   position: fixed;
   width: 300px;
   transform: rotate(-45deg);

@@ -18,11 +18,16 @@ export const store = configureStore({
 })
 
 export type Reducer = ReturnType<typeof reducer>
+
 export type Dispatch = typeof store.dispatch
 
-// export const useDispatch: () => Dispatch = useDispatchDefault
-// export const useDispatch = () => useDispatchDefault<typeof store.dispatch>()
 export const useDispatch = () => useDispatchDefault<Dispatch>()
 
+// other posibilities
+// export const useDispatch: () => Dispatch = useDispatchDefault
+// export const useDispatch = () => useDispatchDefault<typeof store.dispatch>()
+//
+
 export type State = ReturnType<typeof store.getState>
+
 export const useSelector: TypedUseSelectorHook<State> = useSelectorDefault

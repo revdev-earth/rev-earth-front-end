@@ -7,8 +7,8 @@ export interface ToDo {
   completed: boolean
 }
 
-const todos = createSlice({
-  name: "todos",
+const toDos = createSlice({
+  name: "toDos",
   initialState: [] as ToDo[],
   reducers: {
     addToDo: (state, action: PayloadAction<string>) => {
@@ -29,6 +29,6 @@ const todos = createSlice({
   }
 })
 
-export default todos
+export const { addToDo, deleteToDo, completeToDo, sort } = toDos.actions
 
-export const { addToDo, deleteToDo, completeToDo, sort } = todos.actions
+export default toDos
