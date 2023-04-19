@@ -5,12 +5,12 @@ import "./background.css"
 // Función que devuelve una cadena de caracteres con la posición y el color de una serie de estrellas
 const getStars = () => {
   let stars = ""
-  const { width: w, height: h } = window.screen
-  const count = Math.floor(Math.sqrt(w * h) / 14)
+  const { width, height } = window.screen
+  const count = Math.floor(Math.sqrt(width * height) / 14)
 
   for (let index = 0; index < count; index++) {
-    stars += `${Math.random() * w}px ${Math.random() * h}px ${
-      theme.isDark() ? "#fff" : "#000"
+    stars += `${Math.random() * width}px ${Math.random() * height}px ${
+      theme.isDark() ? "#06b6d480" : "#4ade8080"
     }, `
   }
 
@@ -24,18 +24,15 @@ const meteorMaker = () => {
   const duration = Math.random() * 50000 + 3000
   const div = document.createElement("div")
 
-  div.className = "meteor"
+  div.className = "meteor bg-gradient-to-r from-cyan-500 to-blue-500"
   div.style.top = `${top - 300}px`
   div.style.left = `${left}px`
-  div.style.backgroundImage = theme.isDark()
-    ? "linear-gradient(90deg, #fff, hsla(0, 0%, 100%, 0))"
-    : "linear-gradient(90deg, #000, hsla(0, 0%, 100%, 0))"
 
   document.body.append(div)
 
   div.animate(
     [
-      { offset: 0, opacity: 1, marginTop: "-300px", marginRight: "-300px" },
+      { offset: 0, opacity: 1, marginTop: "-300px", marginRight: "-800px" },
       { offset: 0.12, opacity: 0 },
       { offset: 0.15, opacity: 0, marginTop: "300px", marginLeft: "-600px" },
       { offset: 1, opacity: 0, width: 0 }
@@ -51,7 +48,9 @@ const meteorMaker = () => {
 // Componente funcional que renderiza estrellas parpadeando en el fondo y meteoritos cayendo cuando el tema es oscuro
 export default () => {
   // Obtenemos la cadena de caracteres de las estrellas usando el hook useMemo para evitar recalcularla innecesariamente
-  const stars = useMemo(() => getStars(), [])
+  const stars = getStars()
+
+  console.log("pasa")
 
   // Creamos los meteoritos cuando el tema cambia a oscuro y los eliminamos cuando cambia a otro tema
   useEffect(() => {

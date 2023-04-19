@@ -1,14 +1,15 @@
 .stars {
-  height: 1px;
-  width: 1px;
+  height: 2px;
+  width: 2px;
   position: fixed;
   z-index: 10000;
+  background-image: linear-gradient(90deg, #000, hsla(0, 0%, 100%, 90));
 }
 
 .meteor {
   z-index: 1000000;
-  height: 3px;
+  height: 2px;
   position: fixed;
-  width: 300px;
+  width: 200px;
   transform: rotate(-45deg);
 }
