@@ -17,9 +17,9 @@ i18next
       escapeValue: false // not needed for react as it escapes by default
     },
 
-    debug: true,
+    // debug: true,
 
-    fallbackLng: ["es", "de", "en", "??"],
+    fallbackLng: ["es", "de", "en"],
 
     resources: {
       en: {
