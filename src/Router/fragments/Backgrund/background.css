@@ -1,0 +1,14 @@
+.stars {
+  height: 1px;
+  width: 1px;
+  position: fixed;
+  z-index: 10000;
+}
+
+.meteor {
+  z-index: 1000000;
+  height: 1px;
+  position: fixed;
+  width: 300px;
+  transform: rotate(-45deg);
+}

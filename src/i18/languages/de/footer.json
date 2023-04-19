@@ -1,0 +1,67 @@
+{
+  "dataTop": [
+    {
+      "title": "Organisation",
+      "links": [
+        {
+          "href": "/",
+          "name": "Heim"
+        },
+        {
+          "href": "https://revdev.rev.earth",
+          "name": "Rev Dev",
+          "outside": true
+        },
+        {
+          "href": "/group",
+          "name": "Rev Earth Gruppe"
+        },
+        {
+          "href": "/contact-us",
+          "name": "Kontaktiere uns"
+        }
+      ]
+    },
+    {
+      "title": "Ideen",
+      "links": [
+        {
+          "href": "/ideas",
+          "name": "Ideen"
+        }
+      ]
+    },
+    {
+      "title": "Social Media",
+      "links": [
+        {
+          "href": "https://facebook.com/rev.earth",
+          "name": "Facebook",
+          "outside": true
+        },
+        {
+          "href": "https://instagram.com/rev.earth",
+          "name": "Instagram",
+          "outside": true
+        }
+      ]
+    }
+  ],
+  "dataBottom": {
+    "copy": "© Rev Earth 2020",
+    "links": [
+      {
+        "href": "/privacy-policy",
+        "name": "Datenschutz-Bestimmungen"
+      },
+      {
+        "href": "/terms-and-conditions",
+        "name": "Geschäftsbedingungen"
+      },
+      {
+        "href": "/cookies-policy",
+        "name": "Cookie-Richtlinie"
+      }
+    ]
+  }
+}

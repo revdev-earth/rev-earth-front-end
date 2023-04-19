@@ -1,0 +1,27 @@
+{
+  "Intro": {},
+  "section1": {
+    "title": "Ideas that change",
+    "text": "Together we create our world",
+    "img": {
+      "src": "/images/meditation.jpg",
+      "alt": "meditation"
+    }
+  },
+  "section2": {
+    "title": "Projects of which we are part",
+    "text": "Rev Dev - Rev Store - Rev Trade",
+    "img": {
+      "src": "/images/bamboo.jpg",
+      "alt": "bamboo"
+    }
+  },
+  "section3": {
+    "title": "Conscious World",
+    "text": "Let us be conscious parts of our world",
+    "img": {
+      "src": "/images/adventure.jpg",
+      "alt": "adventure"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.to-do * {
+  transition: all 0.25s linear;
+}
+
+.to-do {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.to-do form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.to-do input {
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+.to-do-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.to-do-list button {
+  padding: 0.35rem;
+  font-size: 0.8rem;
+}
+
+.to-do-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.to-do-item span {
+  flex: 2;
+  text-align: left;
+}

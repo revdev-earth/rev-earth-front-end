@@ -1,0 +1,27 @@
+{
+  "Intro": {},
+  "section1": {
+    "title": "Ideen, die sich verändern",
+    "text": "Gemeinsam erschaffen wir unsere Welt",
+    "img": {
+      "src": "/images/meditation.jpg",
+      "alt": "meditation"
+    }
+  },
+  "section2": {
+    "title": "Projekte, an denen wir beteiligt sind",
+    "text": "Rev Dev - Rev Store - Rev Trade",
+    "img": {
+      "src": "/images/bamboo.jpg",
+      "alt": "bamboo"
+    }
+  },
+  "section3": {
+    "title": "Bewusste Welt",
+    "text": "Lasst uns bewusste Teile unserer Welt sein",
+    "img": {
+      "src": "/images/adventure.jpg",
+      "alt": "adventure"
+    }
+  }
+}

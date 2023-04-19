@@ -1,0 +1,27 @@
+{
+  "Intro": {},
+  "section1": {
+    "title": "Ideas que cambian",
+    "text": "Juntos creamos nuestro mundo",
+    "img": {
+      "src": "/images/meditation.jpg",
+      "alt": "meditation"
+    }
+  },
+  "section2": {
+    "title": "Proyectos de los que somos parte",
+    "text": "Rev Dev - Rev Store - Rev Trade",
+    "img": {
+      "src": "/images/bamboo.jpg",
+      "alt": "bamboo"
+    }
+  },
+  "section3": {
+    "title": "Mundo Conciente",
+    "text": "Seamos partes conscientes de nuestro mundo",
+    "img": {
+      "src": "/images/adventure.jpg",
+      "alt": "adventure"
+    }
+  }
+}
