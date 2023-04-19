@@ -137,21 +137,21 @@ const TopFooter = ({ blocks }: any) => {
                   index: Key | null | undefined
                 ) => (
                   <li key={index} className="mb-2">
-                    {link.href?.indexOf("http") > -1 ? (
+                    {/* {link.href?.indexOf("http") > -1 ? (
                       <a
-                        href={link.href}
+                        href=""
                         className="text-base text-secondary hover:text-primary transition-colors duration-200"
                       >
                         {link.name}
                       </a>
                     ) : (
                       <Link
-                        to={link.href}
+                        to=""
                         className="text-base text-secondary hover:text-primary transition-colors duration-200"
                       >
                         {link.name}
                       </Link>
-                    )}
+                    )} */}
                   </li>
                 )
               )}
