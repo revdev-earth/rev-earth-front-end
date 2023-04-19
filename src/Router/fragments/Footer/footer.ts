@@ -52,17 +52,18 @@ export default {
     copy: "© Rev Earth 2020",
     links: [
       {
-        to: "/privacy-policy",
-        name: "Política de privacidad"
-      },
-      {
-        to: "/terms-and-conditions",
-        name: "Terminos y condiciones"
-      },
-      {
-        to: "/cookies-policy",
-        name: "Politica de cookies"
+        to: "/privacy",
+        name: "Privacidad"
       }
+      // ,
+      // {
+      //   to: "/terms-and-conditions",
+      //   name: "Terminos y condiciones"
+      // },
+      // {
+      //   to: "/cookies-policy",
+      //   name: "Politica de cookies"
+      // }
     ]
   }
 }

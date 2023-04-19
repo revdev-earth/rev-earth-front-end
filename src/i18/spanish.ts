@@ -5,7 +5,7 @@ import group from "./languages/es/group.json"
 import header from "./languages/es/header.json"
 import home from "./languages/es/home.json"
 import ideas from "./languages/es/ideas"
-import privacy from "./languages/es/privacy.json"
+import privacy from "./languages/es/privacy"
 import terms from "./languages/es/terms.json"
 
 export default {

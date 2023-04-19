@@ -9,6 +9,7 @@ import Proyectos from "./routes/Proyectos"
 import Donaciones from "./routes/Donaciones"
 
 import ProxyRoot from "./fragments/ProxyRoot"
+import Privacy from "./routes/Privacy"
 
 export default function () {
   const Perfil = MyApp
@@ -57,6 +58,11 @@ export default function () {
         {
           path: "*",
           element: <NotFound />
+        },
+
+        {
+          path: "privacy",
+          element: <Privacy />
         }
       ]
     },

@@ -86,7 +86,7 @@ const BottomFooter = () => {
   const { copy, links } = data.dataBottom
 
   return (
-    <div className="flex flex-1 justify-between md:flex-row flex-col md:gap-16">
+    <div className="flex flex-1 justify-between md:flex-row flex-col md:gap-32">
       <ul className="flex flex-col ">
         {links.map((link: any, index: any) => (
           <Li {...{ link, index }} />
