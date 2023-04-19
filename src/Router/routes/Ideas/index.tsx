@@ -94,7 +94,7 @@ export default function () {
             alguien más a la vez.
           </p>
           <button
-            className="text-slate-950 dark:text-slate-950"
+            className="dark:text-slate-950 bg-neutral-100"
             onClick={openModal}
           >
             open Modal
@@ -113,8 +113,9 @@ export default function () {
             intereses y habilidades.
           </p>
           <button
-            className="text-slate-950 dark:text-slate-950"
+            className="text-slate-950 dark:text-slate-950  opacity-50"
             onClick={openModal}
+            disabled
           >
             Se parte
           </button>
@@ -132,8 +133,9 @@ export default function () {
             crear un futuro más sostenible y justo para todos!
           </p>
           <button
-            className="text-slate-950 dark:text-slate-950"
+            className="text-slate-950 dark:text-slate-950 opacity-50"
             onClick={openModal}
+            disabled
           >
             Bienvenid@
           </button>
