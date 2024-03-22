@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import data from "./footer"
+import Fade from "react-reveal/Fade"
 
 interface Block {
   title: string
@@ -14,50 +15,12 @@ interface LinkProps {
   to?: string
 }
 
-const Footer = () => {
-  const [isVisible, setIsVisible] = useState(false)
-  const footerRef = useRef<HTMLDivElement>(null)
-
-  const footerVariants = {
-    hidden: { y: "50%", opacity: 0 },
-    visible: {
-      y: "0%",
-      opacity: 1,
-      transition: { duration: 1, ease: "easeInOut" },
-    },
-  }
-
-  useEffect(() => {
-    const footerObserver = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setIsVisible(true)
-        footerObserver.disconnect()
-      }
-    }, {})
-
-    footerObserver.observe(footerRef.current!)
-
-    return () => {
-      footerObserver.disconnect()
-    }
-  }, [])
-
-  return (
-    <motion.footer
-      className={`footer pt-24 p-12 md:p-24 md:gap-16 
-        ${isVisible ? "footer-visible" : ""} 
-        flex md:flex-row flex-col md:items-end justify-between 
-      `}
-      variants={footerVariants}
-      initial="hidden"
-      animate={isVisible ? "visible" : "hidden"}
-      ref={footerRef}
-    >
-      <TopFooter />
-      <BottomFooter />
-    </motion.footer>
-  )
-}
+const Footer = () => (
+  <Fade>
+    <TopFooter />
+    <BottomFooter />
+  </Fade>
+)
 
 const TopFooter = () => {
   const blocks: Block[] = data.dataTop
