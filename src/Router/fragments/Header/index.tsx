@@ -69,7 +69,6 @@ export default memo(() => {
     >
       <div className="flex justify-between p-5 pb-0">
         <Switch
-          label={"theme"}
           checked={isDark}
           onChange={newChecked => {
             newChecked ? theme.setDarkTheme() : theme.setLightTheme()

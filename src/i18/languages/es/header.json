@@ -1,7 +1,7 @@
 {
-  "idiomas": {
-    "es": "español",
-    "en": "ingles",
-    "de": "aleman"
+  "lenguages": {
+    "es": "Español",
+    "en": "English",
+    "de": "Deutsch"
   }
 }
