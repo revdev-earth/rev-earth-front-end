@@ -9,7 +9,7 @@ interface Props {
   className?: string
 }
 
-export default function ({
+export default function ScrollAnimation({
   left = false,
   right = false,
   bottom = false,

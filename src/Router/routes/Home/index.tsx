@@ -1,7 +1,7 @@
 import Intro from "./fragments/Intro"
-import Section from "./fragments/Section"
 import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
+import Fade from "react-reveal/Fade"
 
 export default () => {
   const { t } = useTranslation()
@@ -9,7 +9,7 @@ export default () => {
     <div className="overflow-hidden w-full">
       <Intro />
       <div className="h-28 bg-slate-900" />
-      <Section left>
+      <Fade bottom>
         <Link
           to="ideas"
           className="text-slate-950 dark:text-neutral-100 flex p-5 gap-5"
@@ -27,8 +27,8 @@ export default () => {
             />
           </div>
         </Link>
-      </Section>
-      <Section right>
+      </Fade>
+      <Fade bottom>
         <Link
           to="proyectos"
           className="text-slate-950 dark:text-neutral-100 flex p-5 gap-5"
@@ -46,8 +46,8 @@ export default () => {
             <p>{t("home.section2.text")}</p>
           </div>
         </Link>
-      </Section>
-      <Section bottom>
+      </Fade>
+      <Fade bottom>
         <Link
           to="/"
           className="text-slate-950 dark:text-neutral-100 flex flex-col p-5 gap-5"
@@ -65,7 +65,7 @@ export default () => {
             />
           </div>
         </Link>
-      </Section>
+      </Fade>
     </div>
   )
 }
