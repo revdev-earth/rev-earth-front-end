@@ -17,8 +17,14 @@ interface LinkProps {
 
 const Footer = () => (
   <Fade>
-    <TopFooter />
-    <BottomFooter />
+    <div
+      className={`footer pt-24 p-12 md:p-24 md:gap-16 
+        flex md:flex-row flex-col md:items-end justify-between 
+      `}
+    >
+      <TopFooter />
+      <BottomFooter />
+    </div>
   </Fade>
 )
 
