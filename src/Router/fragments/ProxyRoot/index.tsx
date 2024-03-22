@@ -7,19 +7,19 @@ import Header from "../Header"
 export default () => (
   <>
     <Header />
-    <Backgrund />
-    {/* <AnimatePresence> */}
+    {/* <Backgrund /> */}
+
     <div
       className={`
-                      flex items-center justify-center
-                      min-h-screen min-w-screen 
-                      bg-stone-50 dark:bg-slate-950
-                      text-slate-950 dark:text-stone-100
-        `}
+        flex items-center justify-center
+        min-h-screen min-w-screen 
+        bg-stone-50 dark:bg-slate-950
+        text-slate-950 dark:text-stone-100
+      `}
     >
       <Outlet />
     </div>
-    {/* </AnimatePresence> */}
+
     <Footer />
   </>
 )

@@ -1,22 +1,29 @@
-import { useState, useEffect, useRef, Key } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
+import data from "./footer"
 
-export default function () {
+interface Block {
+  title: string
+  links: LinkProps[]
+}
+
+interface LinkProps {
+  name: string
+  href?: string
+  to?: string
+}
+
+const Footer = () => {
   const [isVisible, setIsVisible] = useState(false)
-  const footerRef = useRef<any>(null)
+  const footerRef = useRef<HTMLDivElement>(null)
 
   const footerVariants = {
-    hidden: {
-      y: "50%",
-      opacity: 0,
-    },
+    hidden: { y: "50%", opacity: 0 },
     visible: {
       y: "0%",
       opacity: 1,
-      transition: {
-        duration: 1,
-        ease: "easeInOut",
-      },
+      transition: { duration: 1, ease: "easeInOut" },
     },
   }
 
@@ -28,7 +35,7 @@ export default function () {
       }
     }, {})
 
-    footerObserver.observe(footerRef.current)
+    footerObserver.observe(footerRef.current!)
 
     return () => {
       footerObserver.disconnect()
@@ -37,11 +44,10 @@ export default function () {
 
   return (
     <motion.footer
-      className={` footer 
-        pt-24 p-12 md:p-24 md:gap-16
-        ${isVisible ? "footer-visible" : ""}     
-        flex md:flex-row flex-col md:items-end justify-between
-        min-h-screen  `}
+      className={`footer pt-24 p-12 md:p-24 md:gap-16 
+        ${isVisible ? "footer-visible" : ""} 
+        flex md:flex-row flex-col md:items-end justify-between 
+      `}
       variants={footerVariants}
       initial="hidden"
       animate={isVisible ? "visible" : "hidden"}
@@ -53,53 +59,48 @@ export default function () {
   )
 }
 
-import { Link } from "react-router-dom"
-import data from "./footer"
-
 const TopFooter = () => {
-  const blocks = data.dataTop
+  const blocks: Block[] = data.dataTop
 
   return (
     <div className="flex flex-1 flex-col gap-3">
-      {blocks.map((block: any, index: number) => (
-        <Foot {...{ block, index }} />
+      {blocks.map((block: Block, index: number) => (
+        <Foot key={index} block={block} />
       ))}
     </div>
   )
 }
 
-const Foot = ({ index, block }: any) => (
-  <div key={index} className="flex flex-col gap-2">
-    <h3 className="text-base font-medium text-secondary uppercas">
+const Foot = ({ block }: { block: Block }) => (
+  <div className="flex flex-col gap-2">
+    <h3 className="text-base font-medium text-secondary uppercase">
       {block.title}
     </h3>
-
     <ul className="list-none">
-      {block.links.map((link: any, index: number) => (
-        <Li {...{ link, index }} />
+      {block.links.map((link: LinkProps, index: number) => (
+        <Li key={index} link={link} />
       ))}
     </ul>
   </div>
 )
 
 const BottomFooter = () => {
-  const { copy, links } = data.dataBottom
+  const { copy, links }: { copy: string; links: LinkProps[] } = data.dataBottom
 
   return (
     <div className="flex flex-1 justify-between md:flex-row flex-col md:gap-32">
-      <ul className="flex flex-col ">
-        {links.map((link: any, index: any) => (
-          <Li {...{ link, index }} />
+      <ul className="flex flex-col">
+        {links.map((link: LinkProps, index: number) => (
+          <Li key={index} link={link} />
         ))}
       </ul>
-
       <p className="whitespace-nowrap">{copy}</p>
     </div>
   )
 }
 
-const Li = ({ index, link }: any) => (
-  <li key={index}>
+const Li = ({ link }: { link: LinkProps }) => (
+  <li>
     {link.href && (
       <a
         href={link.href}
@@ -118,3 +119,5 @@ const Li = ({ index, link }: any) => (
     )}
   </li>
 )
+
+export default Footer

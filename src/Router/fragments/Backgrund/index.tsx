@@ -1,8 +1,7 @@
-import { useEffect, useMemo } from "react"
+import { useEffect } from "react"
 import theme from "theme"
 import "./background.css"
 
-// Función que devuelve una cadena de caracteres con la posición y el color de una serie de estrellas
 const getStars = () => {
   let stars = ""
   const { width, height } = window.screen
@@ -17,7 +16,6 @@ const getStars = () => {
   return stars.slice(0, stars.length - 2)
 }
 
-// Función que crea un meteorito en una posición aleatoria en la pantalla y lo anima hasta que desaparece
 const meteorMaker = () => {
   const left = Math.random() * window.outerWidth
   const top = Math.random() * window.outerHeight
@@ -45,12 +43,9 @@ const meteorMaker = () => {
   }, 4000)
 }
 
-// Componente funcional que renderiza estrellas parpadeando en el fondo y meteoritos cayendo cuando el tema es oscuro
-export default () => {
-  // Obtenemos la cadena de caracteres de las estrellas usando el hook useMemo para evitar recalcularla innecesariamente
+const BackgroundStars = () => {
   const stars = getStars()
 
-  // Creamos los meteoritos cuando el tema cambia a oscuro y los eliminamos cuando cambia a otro tema
   useEffect(() => {
     meteorMaker()
 
@@ -63,3 +58,5 @@ export default () => {
 
   return <div className="stars" style={{ boxShadow: stars }} />
 }
+
+export default BackgroundStars
