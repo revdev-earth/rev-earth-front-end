@@ -1,27 +1,27 @@
 {
   "Intro": {},
   "section1": {
-    "title": "Ideas that change",
-    "text": "Together we create our world",
+    "title": "Ideas that Change Lives",
+    "text": "Dive into the vast ocean of creativity, where our minds become the crucible of ideas that transform realities. Here, together, we create our world, a world full of opportunities and adventures that inspire us to reach new heights and discover the infinite potential that resides within each of us.",
     "img": {
       "src": "/images/meditation.jpg",
-      "alt": "meditation"
+      "alt": "Meditation in nature connects us with our inner self"
     }
   },
   "section2": {
-    "title": "Projects of which we are part",
-    "text": "Rev Dev - Rev Store - Rev Trade",
+    "title": "Projects that Inspire Us",
+    "text": "We explore the horizon of innovation, where each project is a beacon of light guiding our steps towards a more promising future. From Rev Dev to Rev Store and Rev Trade, we immerse ourselves in projects that not only drive change but also fuel our passion for creativity and excellence. Join us as we create a legacy of inspiration and transformation!",
     "img": {
       "src": "/images/bamboo.jpg",
-      "alt": "bamboo"
+      "alt": "Bamboo, a symbol of flexibility and resilience, teaches us to adapt and grow"
     }
   },
   "section3": {
-    "title": "Conscious World",
-    "text": "Let us be conscious parts of our world",
+    "title": "A More Conscious World",
+    "text": "Let's embrace the responsibility of being guardians of our precious home, Earth, and commit to preserving its beauty for future generations. By venturing into the vastness of nature, we connect with the very essence of life and pledge to live in harmony with our surroundings. Together, we can create a more conscious world filled with love and respect for all forms of life on our planet!",
     "img": {
       "src": "/images/adventure.jpg",
-      "alt": "adventure"
+      "alt": "Outdoor adventure invites us to explore the beauty and diversity of our world"
     }
   }
 }

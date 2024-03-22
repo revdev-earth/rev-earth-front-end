@@ -1,27 +1,27 @@
 {
   "Intro": {},
   "section1": {
-    "title": "Ideen, die sich verändern",
-    "text": "Gemeinsam erschaffen wir unsere Welt",
+    "title": "Ideen, die Leben verändern",
+    "text": "Tauchen Sie ein in den weiten Ozean der Kreativität, wo unsere Gedanken zum Schmelztiegel von Ideen werden, die Realitäten verändern. Hier, gemeinsam, erschaffen wir unsere Welt, eine Welt voller Möglichkeiten und Abenteuer, die uns inspirieren, neue Höhen zu erreichen und das unendliche Potenzial zu entdecken, das in jedem von uns steckt.",
     "img": {
       "src": "/images/meditation.jpg",
-      "alt": "meditation"
+      "alt": "Meditation in der Natur verbindet uns mit unserem inneren Selbst"
     }
   },
   "section2": {
-    "title": "Projekte, an denen wir beteiligt sind",
-    "text": "Rev Dev - Rev Store - Rev Trade",
+    "title": "Projekte, die uns inspirieren",
+    "text": "Wir erkunden den Horizont der Innovation, wo jedes Projekt ein Leuchtfeuer ist, das unsere Schritte in eine vielversprechende Zukunft lenkt. Von Rev Dev bis Rev Store und Rev Trade tauchen wir in Projekte ein, die nicht nur Veränderungen vorantreiben, sondern auch unsere Leidenschaft für Kreativität und Exzellenz beflügeln. Begleiten Sie uns, während wir ein Erbe der Inspiration und Transformation schaffen!",
     "img": {
       "src": "/images/bamboo.jpg",
-      "alt": "bamboo"
+      "alt": "Bambus, ein Symbol für Flexibilität und Widerstandsfähigkeit, lehrt uns, uns anzupassen und zu wachsen"
     }
   },
   "section3": {
-    "title": "Bewusste Welt",
-    "text": "Lasst uns bewusste Teile unserer Welt sein",
+    "title": "Eine bewusstere Welt",
+    "text": "Lassen Sie uns die Verantwortung übernehmen, Hüter unseres kostbaren Zuhauses, der Erde, zu sein, und uns verpflichten, ihre Schönheit für zukünftige Generationen zu bewahren. Indem wir uns in die Weite der Natur begeben, verbinden wir uns mit der Essenz des Lebens und geloben, im Einklang mit unserer Umgebung zu leben. Gemeinsam können wir eine bewusstere Welt schaffen, die voller Liebe und Respekt für alle Lebensformen auf unserem Planeten ist!",
     "img": {
       "src": "/images/adventure.jpg",
-      "alt": "adventure"
+      "alt": "Outdoor-Abenteuer lädt uns ein, die Schönheit und Vielfalt unserer Welt zu erkunden"
     }
   }
 }

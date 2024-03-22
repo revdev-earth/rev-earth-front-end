@@ -12,9 +12,9 @@ export default () => {
       <Fade bottom>
         <Link
           to="ideas"
-          className="text-slate-950 dark:text-neutral-100 flex p-5 gap-5"
+          className="text-slate-950 dark:text-neutral-100 flex p-5 gap-5 items-center"
         >
-          <div className="flex flex-col-reverse gap-5 ">
+          <div className="flex flex-col gap-5 w-2/5">
             <h2 className="text-3xl font-semibold">
               {t("home.section1.title")}
             </h2>
@@ -31,7 +31,7 @@ export default () => {
       <Fade bottom>
         <Link
           to="proyectos"
-          className="text-slate-950 dark:text-neutral-100 flex p-5 gap-5"
+          className="text-slate-950 dark:text-neutral-100 flex p-5 gap-5 items-center"
         >
           <div>
             <img
@@ -39,7 +39,7 @@ export default () => {
               alt={t("home.section2.img.alt") as string}
             />
           </div>
-          <div className="flex flex-col gap-5 ">
+          <div className="flex flex-col gap-5 w-2/5">
             <h2 className="text-3xl font-semibold">
               {t("home.section2.title")}
             </h2>
@@ -50,13 +50,13 @@ export default () => {
       <Fade bottom>
         <Link
           to="/"
-          className="text-slate-950 dark:text-neutral-100 flex flex-col p-5 gap-5"
+          className="text-slate-950 dark:text-neutral-100 flex flex-col p-5 gap-5 items-center"
         >
-          <div className="flex flex-col gap-5 items-center">
-            <h2 className="text-3xl font-semibold">
+          <div className="flex flex-col gap-5 w-full items-center">
+            <h2 className="text-3xl font-semibold ">
               {t("home.section3.title")}
             </h2>
-            <p>{t("home.section3.text")}</p>
+            <p className="max-w-screen-lg">{t("home.section3.text")}</p>
           </div>
           <div>
             <img

@@ -1,27 +1,27 @@
 {
   "Intro": {},
   "section1": {
-    "title": "Ideas que cambian",
-    "text": "Juntos creamos nuestro mundo",
+    "title": "Ideas que cambian vidas",
+    "text": "Sumérgete en el vasto océano de la creatividad, donde nuestras mentes se convierten en el crisol de las ideas que transforman realidades. Aquí, juntos, creamos nuestro mundo, un mundo lleno de oportunidades y aventuras que nos inspiran a alcanzar nuevas alturas y descubrir el potencial infinito que reside en cada uno de nosotros.",
     "img": {
       "src": "/images/meditation.jpg",
-      "alt": "meditation"
+      "alt": "La meditación en la naturaleza nos conecta con nuestro ser interior"
     }
   },
   "section2": {
-    "title": "Proyectos de los que somos parte",
-    "text": "Rev Dev - Rev Store - Rev Trade",
+    "title": "Proyectos que nos inspiran",
+    "text": "Exploramos el horizonte de la innovación, donde cada proyecto es un faro de luz que guía nuestros pasos hacia un futuro más prometedor. Desde Rev Dev hasta Rev Store y Rev Trade, nos sumergimos en proyectos que no solo impulsan el cambio, sino que también alimentan nuestra pasión por la creatividad y la excelencia. ¡Únete a nosotros mientras creamos un legado de inspiración y transformación!",
     "img": {
       "src": "/images/bamboo.jpg",
-      "alt": "bamboo"
+      "alt": "El bambú, símbolo de flexibilidad y resistencia, nos enseña a adaptarnos y crecer"
     }
   },
   "section3": {
-    "title": "Mundo Conciente",
-    "text": "Seamos partes conscientes de nuestro mundo",
+    "title": "Un mundo más consciente",
+    "text": "Abracemos la responsabilidad de ser guardianes de nuestro preciado hogar, la Tierra, y comprometámonos a preservar su belleza para las generaciones venideras. Al aventurarnos en la vastedad de la naturaleza, nos conectamos con la esencia misma de la vida y nos comprometemos a vivir en armonía con nuestro entorno. ¡Juntos, podemos crear un mundo más consciente y lleno de amor y respeto por toda forma de vida en nuestro planeta!",
     "img": {
       "src": "/images/adventure.jpg",
-      "alt": "adventure"
+      "alt": "La aventura al aire libre nos invita a explorar la belleza y la diversidad de nuestro mundo"
     }
   }
 }
