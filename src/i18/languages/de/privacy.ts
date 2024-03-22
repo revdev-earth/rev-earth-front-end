@@ -7,7 +7,7 @@ El responsable del Sitio es rev.earth correo de informacion info@rev.earth
     
 Toda persona que acceda, utilice y navegue por el Sitio y/o toda persona suscripta al presente Sitio (en forma indistinta “Visitante” o “Usuario”), se encuentra obligado a cumplir y respetar las Políticas de Privacidad. Asimismo, en caso que a través del acceso, utilización, navegación y/o suscripción en el Sitio se está contratando la utilización de servicios prestados por rev.earth, el Visitante está aceptando y comprometiéndose al respeto y cumplimiento de estas Políticas de Privacidad, las cuales constituyen un contrato para los Visitantes y rev.earth. Si no acuerda total o parcialmente sujetarse a las Políticas de Privacidad, no acceda, utilice o navegue en el Sitio.
     
-rev.earth pide a sus Usuarios que lean con detenimiento estas Políticas de Privacidad, las cuales indican como rev.earth procesará sus datos personales.`
+rev.earth pide a sus Usuarios que lean con detenimiento estas Políticas de Privacidad, las cuales indican como rev.earth procesará sus datos personales.`,
   },
   admision: {
     titulo: `Admisión como Visitante y/o Usuario.`,
@@ -17,7 +17,7 @@ Se permite la utilización, acceso, suscripción o navegación en general por el
 
 B. Aceptación de las Políticas de Privacidad
 
-Toda persona que utilice, visite, acceda, suscriba o navegue en general por el Sitio, acepta en forma incondicional las Políticas de Privacidad. Mientras los Visitantes y/o Usuarios cumplan con todas las obligaciones a su cargo, rev.earth le concede a éstos últimos el derecho revocable, limitado, no exclusivo e intransferible de acceso y uso de los servicios provistos en el Sitio.`
+Toda persona que utilice, visite, acceda, suscriba o navegue en general por el Sitio, acepta en forma incondicional las Políticas de Privacidad. Mientras los Visitantes y/o Usuarios cumplan con todas las obligaciones a su cargo, rev.earth le concede a éstos últimos el derecho revocable, limitado, no exclusivo e intransferible de acceso y uso de los servicios provistos en el Sitio.`,
   },
   regimen: {
     titulo: `Régimen de Datos Suministrados por los Usuarios.`,
@@ -37,7 +37,7 @@ El Visitante presta asimismo su consentimiento para que sus Datos Personales sea
 
 Los Visitantes deben proveer información verdadera y actualizada sobre su persona y cumplir con las demás condiciones de uso del Sitio.
 
-Como responsable de bases de datos, rev.earth garantiza que los procesos internos propios de las bases de datos cumplen con las obligaciones legales de seguridad y confidencialidad impuestas por la Ley No 25.326 de Protección de Datos Personales y que se asegura el acceso, actualización, supresión o rectificación de los datos por parte de su titular (artículo 14 y 15 de la Ley 25.326 Argentina).`
+Como responsable de bases de datos, rev.earth garantiza que los procesos internos propios de las bases de datos cumplen con las obligaciones legales de seguridad y confidencialidad impuestas por la Ley No 25.326 de Protección de Datos Personales y que se asegura el acceso, actualización, supresión o rectificación de los datos por parte de su titular (artículo 14 y 15 de la Ley 25.326 Argentina).`,
   },
   prohibiciones: {
     titulo: `Usos Prohibidos de los Datos e Informaciones en el Sitio.`,
@@ -51,7 +51,7 @@ Realizar manifestaciones falsas o proporcionar información falsa sobre los dato
 
 Usar el Sitio en forma contraria a las Políticas de Privacidad, la ley y las buenas costumbres, o de cualquier forma que pueda dañar, desprestigiar, sobrecargar o perjudicar a rev.earth o a terceros.
 
-El presente listado de conductas prohibidas es una enunciación meramente ejemplificativa de las infracciones que pueden cometer los Visitantes.`
+El presente listado de conductas prohibidas es una enunciación meramente ejemplificativa de las infracciones que pueden cometer los Visitantes.`,
   },
   derechos: {
     titulo: `Derechos del Usuario y Visitante.`,
@@ -63,7 +63,7 @@ Para ejercer cualquiera de estos derechos, el Visitante deberá enviar un correo
 
 Conforme la Disposición DNPDP N° 10/08: El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo establecido en el artículo 14, inciso 3 de la Ley Nº 25.326.
 
-La AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, Órgano de Control de la Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales.`
+La AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, Órgano de Control de la Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales.`,
   },
   obligaciones: {
     titulo: `Derechos y Obligaciones de rev.earth`,
@@ -81,7 +81,7 @@ rev.earth no es responsable por errores, omisiones, interrupciones, eliminacione
 
 B. Herramientas de Seguridad
 
-El Sitio le brinda a los Visitantes una experiencia de navegación en un entorno seguro, utilizando para tales fines antivirus, firewalls y otras tecnologías. rev.earth no se hace responsable por los posibles ataques, phishing, pharming o cualquier otro evento de fuerza mayor que pueda vulnerar al Sitio.`
+El Sitio le brinda a los Visitantes una experiencia de navegación en un entorno seguro, utilizando para tales fines antivirus, firewalls y otras tecnologías. rev.earth no se hace responsable por los posibles ataques, phishing, pharming o cualquier otro evento de fuerza mayor que pueda vulnerar al Sitio.`,
   },
   miscelania: {
     titulo: `Miscelánea.`,
@@ -103,6 +103,6 @@ Si alguna cláusula de las Políticas de Privacidad es considerado nulo, anulabl
 
 E. Modificación
 
-rev.earth se reserva el derecho a modificar total o parcialmente las Políticas de Privacidad, en cualquier momento y sin previo aviso. Si sucede cualquier modificación, se publicará la misma en el Sitio y si el Usuario persiste en la navegación en el Sitio y/o suministra datos y/o utiliza los servicios prestados, se considerará que ha aceptado implícitamente las nuevas Políticas de Privacidad. Los Visitantes tienen la responsabilidad de visitar regularmente el Sitio para controlar si ha habido cambios a las Políticas de Privacidad de rev.earth.`
-  }
+rev.earth se reserva el derecho a modificar total o parcialmente las Políticas de Privacidad, en cualquier momento y sin previo aviso. Si sucede cualquier modificación, se publicará la misma en el Sitio y si el Usuario persiste en la navegación en el Sitio y/o suministra datos y/o utiliza los servicios prestados, se considerará que ha aceptado implícitamente las nuevas Políticas de Privacidad. Los Visitantes tienen la responsabilidad de visitar regularmente el Sitio para controlar si ha habido cambios a las Políticas de Privacidad de rev.earth.`,
+  },
 }

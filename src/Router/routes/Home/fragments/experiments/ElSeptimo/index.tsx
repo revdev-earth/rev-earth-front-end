@@ -5,7 +5,7 @@ export default function () {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress, scrollY } = useScroll({
     target: ref,
-    offset: ["start end", "end end"]
+    offset: ["start end", "end end"],
   })
 
   const xsss = useTransform(
@@ -42,7 +42,7 @@ export default function () {
 
   const xs = useSpring(xsss, {
     damping: 50,
-    stiffness: 400
+    stiffness: 400,
   })
 
   return (
@@ -50,7 +50,7 @@ export default function () {
       ref={ref}
       className="relative"
       style={{
-        x: xs
+        x: xs,
       }}
     >
       <img src="/images/meditation.jpg" alt="Meditation" />

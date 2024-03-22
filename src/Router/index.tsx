@@ -35,41 +35,41 @@ export default function () {
       children: [
         {
           index: true,
-          element: <Home />
+          element: <Home />,
         },
         {
           path: "ideas",
-          element: <Ideas />
+          element: <Ideas />,
         },
         {
           path: "proyectos",
-          element: <Proyectos />
+          element: <Proyectos />,
         },
         {
           path: "myApp",
-          element: <MyApp />
+          element: <MyApp />,
         },
 
         {
           path: "donaciones",
-          element: <Donaciones />
+          element: <Donaciones />,
         },
 
         {
           path: "*",
-          element: <NotFound />
+          element: <NotFound />,
         },
 
         {
           path: "privacy",
-          element: <Privacy />
-        }
-      ]
+          element: <Privacy />,
+        },
+      ],
     },
 
     {
       path: "access",
-      element: <Access />
+      element: <Access />,
     },
 
     {
@@ -78,14 +78,14 @@ export default function () {
       children: [
         {
           path: "dashboard",
-          element: <Dashboard />
+          element: <Dashboard />,
         },
 
         {
           path: "perfil",
-          element: <Perfil />
-        }
-      ]
+          element: <Perfil />,
+        },
+      ],
     },
 
     {
@@ -93,22 +93,22 @@ export default function () {
       children: [
         {
           index: true,
-          element: <Public />
+          element: <Public />,
         },
         {
           path: "terms_and_conditions",
-          element: <TermsAndConditions />
+          element: <TermsAndConditions />,
         },
         {
           path: "participa",
-          element: <Participa />
+          element: <Participa />,
         },
         {
           path: "sorteos",
-          element: <Sorteos />
-        }
-      ]
-    }
+          element: <Sorteos />,
+        },
+      ],
+    },
   ])
 
   return <RouterProvider {...{ router }} />

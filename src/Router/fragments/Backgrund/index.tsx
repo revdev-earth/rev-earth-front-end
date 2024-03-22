@@ -35,7 +35,7 @@ const meteorMaker = () => {
       { offset: 0, opacity: 1, marginTop: "-300px", marginRight: "-800px" },
       { offset: 0.12, opacity: 0 },
       { offset: 0.15, opacity: 0, marginTop: "300px", marginLeft: "-600px" },
-      { offset: 1, opacity: 0, width: 0 }
+      { offset: 1, opacity: 0, width: 0 },
     ],
     { duration: duration, easing: "linear" }
   )

@@ -8,16 +8,16 @@ export default function () {
   const footerVariants = {
     hidden: {
       y: "50%",
-      opacity: 0
+      opacity: 0,
     },
     visible: {
       y: "0%",
       opacity: 1,
       transition: {
         duration: 1,
-        ease: "easeInOut"
-      }
-    }
+        ease: "easeInOut",
+      },
+    },
   }
 
   useEffect(() => {

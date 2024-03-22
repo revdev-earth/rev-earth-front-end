@@ -17,5 +17,5 @@ export default {
   home,
   ideas,
   privacy,
-  terms
+  terms,
 }

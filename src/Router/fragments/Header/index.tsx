@@ -4,7 +4,7 @@ import { useScrollPosition } from "@n8tb1t/use-scroll-position"
 import { useLocation } from "react-router-dom"
 
 import LineaRev from "./LineaRev"
-import Idiomas from "./Idiomas"
+import Languages from "./Languages"
 
 import Switch from "./Switch"
 import theme from "theme"
@@ -12,16 +12,16 @@ import theme from "theme"
 const headerVariants = {
   hidden: {
     scale: 1.5,
-    opacity: 0
+    opacity: 0,
   },
   visible: {
     scale: 1,
     opacity: 1,
     transition: {
       duration: 1,
-      ease: "easeInOut"
-    }
-  }
+      ease: "easeInOut",
+    },
+  },
 }
 
 export default memo(() => {
@@ -71,12 +71,12 @@ export default memo(() => {
         <Switch
           label={"theme"}
           checked={isDark}
-          onChange={(newChecked) => {
+          onChange={newChecked => {
             newChecked ? theme.setDarkTheme() : theme.setLightTheme()
             setIsDark(newChecked)
           }}
         />
-        <Idiomas />
+        <Languages />
       </div>
       <LineaRev isDark={isDark} />
     </motion.header>

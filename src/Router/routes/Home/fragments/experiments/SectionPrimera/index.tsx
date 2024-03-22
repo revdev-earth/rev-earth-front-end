@@ -9,7 +9,7 @@ export default function ({ children, delay = 0, className }: any) {
     hidden: {
       opacity: 0,
       x: -500,
-      y: 0
+      y: 0,
     },
     visible: {
       opacity: 1,
@@ -18,9 +18,9 @@ export default function ({ children, delay = 0, className }: any) {
       transition: {
         duration: 1,
         ease: "easeInOut",
-        delay: delay
-      }
-    }
+        delay: delay,
+      },
+    },
   }
 
   useEffect(() => {

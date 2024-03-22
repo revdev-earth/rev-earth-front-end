@@ -2,19 +2,19 @@ import { configureStore, combineReducers } from "@reduxjs/toolkit"
 import {
   TypedUseSelectorHook,
   useSelector as useSelectorDefault,
-  useDispatch as useDispatchDefault
+  useDispatch as useDispatchDefault,
 } from "react-redux"
 
 import todos from "./todos"
 
 const reducer = combineReducers({
-  todos: todos.reducer
+  todos: todos.reducer,
 })
 
 export const store = configureStore({
   reducer: {
-    todos: todos.reducer
-  }
+    todos: todos.reducer,
+  },
 })
 
 export type Reducer = ReturnType<typeof reducer>

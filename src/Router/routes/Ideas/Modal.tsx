@@ -25,7 +25,7 @@ const ModalContent = ({ children }: any) => (
 
 const CustomModal = ({
   isOpen,
-  children
+  children,
 }: {
   isOpen: boolean
   children: ReactNode

@@ -5,56 +5,56 @@ export default {
       links: [
         {
           to: "/",
-          name: "Casa"
+          name: "Casa",
         },
         {
           href: "https://rev.earth",
-          name: "Rev Dev"
+          name: "Rev Dev",
         },
         {
           to: "/group",
-          name: "Rev Earth Grupo"
+          name: "Rev Earth Grupo",
         },
         {
           to: "/contact-us",
-          name: "Contactactanos"
-        }
-      ]
+          name: "Contactactanos",
+        },
+      ],
     },
     {
       title: "Ideas",
       links: [
         {
           to: "/ideas",
-          name: "Ideas"
+          name: "Ideas",
         },
         {
           to: "/donaciones",
-          name: "Donaciones"
-        }
-      ]
+          name: "Donaciones",
+        },
+      ],
     },
     {
       title: "Social Media",
       links: [
         {
           href: "https://facebook.com/rev.earth",
-          name: "Facebook"
+          name: "Facebook",
         },
         {
           href: "https://instagram.com/rev.earth",
-          name: "Instagram"
-        }
-      ]
-    }
+          name: "Instagram",
+        },
+      ],
+    },
   ],
   dataBottom: {
     copy: "© Rev Earth 2020",
     links: [
       {
         to: "/privacy",
-        name: "Privacidad"
-      }
+        name: "Privacidad",
+      },
       // ,
       // {
       //   to: "/terms-and-conditions",
@@ -64,6 +64,6 @@ export default {
       //   to: "/cookies-policy",
       //   name: "Politica de cookies"
       // }
-    ]
-  }
+    ],
+  },
 }

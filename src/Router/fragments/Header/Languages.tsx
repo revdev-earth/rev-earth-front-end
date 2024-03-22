@@ -1,6 +1,6 @@
+import { useState } from "react"
 import { changeLanguage } from "i18"
 import i18next from "i18next"
-import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import Select from "react-select"
 import theme from "theme"
@@ -11,11 +11,11 @@ export default () => {
   const options = [
     { value: "es", label: t("header.idiomas.es") },
     { value: "en", label: t("header.idiomas.en") },
-    { value: "de", label: t("header.idiomas.de") }
+    { value: "de", label: t("header.idiomas.de") },
   ]
 
   const [value, setValue] = useState<{ value: string; label: string }>(
-    options.filter((option) => {
+    options.filter(option => {
       if (option.value === i18next.language.slice(0, 2)) return option
     })[0]
   )
@@ -33,27 +33,27 @@ export default () => {
       options={options}
       onChange={newOptionSelected}
       styles={{
-        control: (baseStyles) => ({
+        control: baseStyles => ({
           ...baseStyles,
           border: 0,
           boxShadow: "0 0 0",
           background: "transparent",
-          cursor: "pointer"
+          cursor: "pointer",
         }),
-        input: (b) => ({ ...b, minWidth: "80px", cursor: "pointer" }),
-        singleValue: (b) => ({
+        input: b => ({ ...b, minWidth: "80px", cursor: "pointer" }),
+        singleValue: b => ({
           ...b,
           textAlign: "center",
           color: theme.isDark() ? "white" : "black",
-          cursor: "pointer"
+          cursor: "pointer",
         }),
         indicatorsContainer: () => ({ display: "none" }),
-        menu: (b) => ({
+        menu: b => ({
           ...b,
           marginTop: "-2px",
           background: "#ffffff90",
           width: "100px",
-          cursor: "pointer"
+          cursor: "pointer",
         }),
         option: (b, s) => ({
           ...b,
@@ -61,9 +61,9 @@ export default () => {
           color: s.isSelected || s.isFocused ? "black" : "black",
           cursor: "pointer",
           "&:hover": {
-            color: theme.isDark() ? "black" : "black"
-          }
-        })
+            color: theme.isDark() ? "black" : "black",
+          },
+        }),
       }}
     />
   )

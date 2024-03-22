@@ -21,7 +21,7 @@ export const Item = ({ todo }: { todo: ToDo }) => {
           checked: todo.completed,
           onChange: completeIt,
           ariaText: "complete task",
-          label: todo.message
+          label: todo.message,
         }}
       />
       <button
@@ -60,7 +60,7 @@ export const Item = ({ todo }: { todo: ToDo }) => {
 }
 
 export const List = () => {
-  const todos = useSelector((state) => state.todos)
+  const todos = useSelector(state => state.todos)
   const dispatch = useDispatch()
 
   const sortList = () => dispatch(sort())
@@ -68,7 +68,7 @@ export const List = () => {
   return (
     <div className="to-do-list pr-16">
       {todos.length > 2 && <button onClick={sortList}>Sort them!</button>}
-      {todos.map((todo) => (
+      {todos.map(todo => (
         <Item key={todo.id} {...{ todo }} />
       ))}
     </div>

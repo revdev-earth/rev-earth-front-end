@@ -16,17 +16,17 @@ const toDos = createSlice({
       return state
     },
     deleteToDo: (state, action: PayloadAction<string>) =>
-      state.filter((todo) => todo.id !== action.payload),
+      state.filter(todo => todo.id !== action.payload),
     completeToDo: (state, action: PayloadAction<string>) => {
-      const completedToDo = state.find((todo) => todo.id === action.payload)
+      const completedToDo = state.find(todo => todo.id === action.payload)
 
       if (completedToDo) {
         completedToDo.completed = Boolean(!completedToDo.completed)
       }
       return state
     },
-    sort: (state) => state.sort((a, b) => a.message.localeCompare(b.message))
-  }
+    sort: state => state.sort((a, b) => a.message.localeCompare(b.message)),
+  },
 })
 
 export const { addToDo, deleteToDo, completeToDo, sort } = toDos.actions

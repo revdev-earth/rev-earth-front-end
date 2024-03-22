@@ -11,7 +11,7 @@ interface Props {
 export default function ({
   left = false,
   right = false,
-  bottom = false
+  bottom = false,
 }: Props) {
   const ref = useRef<HTMLDivElement>(null)
   const [x, setX] = useState(-window.innerWidth)
@@ -44,22 +44,22 @@ export default function ({
         nuevaPosicionXLimitada < 0
           ? 0
           : nuevaPosicionXLimitada > windowInnerWidth
-          ? windowInnerWidth
-          : nuevaPosicionXLimitada
+            ? windowInnerWidth
+            : nuevaPosicionXLimitada
       const posicionLeft = posicionXFinal - windowInnerWidth
       const posicionRight = posicionXFinal + windowInnerWidth
 
       const nuevaPosicionXFinal = left
         ? posicionLeft
         : right
-        ? posicionRight
-        : posicionLeft
+          ? posicionRight
+          : posicionLeft
       setX(nuevaPosicionXFinal)
     }
 
     const debounceScroll = debounce(scroll, 5, {
       leading: false,
-      trailing: true
+      trailing: true,
     })
 
     scroll()

@@ -1,9 +1,5 @@
 {
-  "printWidth": 80,
+  "arrowParens": "avoid",
   "semi": false,
-  "quoteProps": "as-needed",
-  "jsxSingleQuote": false,
-  "trailingComma": "none",
-  "jsxBracketSameLine": false,
-  "embeddedLanguageFormatting": "auto"
+  "trailingComma": "es5"
 }

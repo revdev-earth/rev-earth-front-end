@@ -7,6 +7,8 @@ import english from "./english"
 import spanish from "./spanish"
 import deutsch from "./deutsch"
 
+export type LanguagesEsperados = "es" | "de" | "en"
+
 // configuración de i18next
 i18next
   .use(Backend)
@@ -14,7 +16,7 @@ i18next
   .use(initReactI18next)
   .init({
     interpolation: {
-      escapeValue: false // not needed for react as it escapes by default
+      escapeValue: false, // not needed for react as it escapes by default
     },
 
     // debug: true,
@@ -23,18 +25,16 @@ i18next
 
     resources: {
       en: {
-        translation: english
+        translation: english,
       },
       es: {
-        translation: spanish
+        translation: spanish,
       },
       de: {
-        translation: deutsch
-      }
-    }
+        translation: deutsch,
+      },
+    },
   })
-
-export type LanguagesEsperados = "es" | "de" | "en"
 
 // guarda el idioma actual en localStorage
 const saveLanguageToLocalStorage = (language: LanguagesEsperados) => {
@@ -42,9 +42,7 @@ const saveLanguageToLocalStorage = (language: LanguagesEsperados) => {
 }
 
 // obtiene el idioma guardado en localStorage
-const getLanguageFromLocalStorage = () => {
-  return localStorage.getItem("language")
-}
+const getLanguageFromLocalStorage = () => localStorage.getItem("language")
 
 // detecta el idioma del navegador y lo usa como idioma predeterminado
 i18next.on("languageDetection", () => {

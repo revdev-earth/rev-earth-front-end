@@ -30,8 +30,8 @@ export default function () {
         nuevaPosicionXLimitada < 0
           ? 0
           : nuevaPosicionXLimitada > windowInnerWidth
-          ? windowInnerWidth
-          : nuevaPosicionXLimitada
+            ? windowInnerWidth
+            : nuevaPosicionXLimitada
       const nuevaPosicionXFinal = posicionXFinal - windowInnerWidth
       setX(nuevaPosicionXFinal)
     }

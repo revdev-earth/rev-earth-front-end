@@ -11,14 +11,14 @@ export default () => {
     "prohibiciones",
     "derechos",
     "obligaciones",
-    "miscelania"
+    "miscelania",
   ]
 
   return (
     <div className=" p-16  flex flex-col gap-8 ">
       {/*  */}
 
-      {secciones.map((seccion) => (
+      {secciones.map(seccion => (
         <div key={seccion} className="flex flex-col gap-4">
           <h3 className="text-3xl">{t(`privacy.${seccion}.titulo`)}</h3>
           <div className="whitespace-break-spaces">

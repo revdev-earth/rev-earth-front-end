@@ -11,24 +11,24 @@ interface Props {
 const introVariants = {
   hidden: {
     opacity: 0,
-    scale: 1.2
+    scale: 1.2,
   },
   visible: {
     opacity: 1,
     scale: 1,
     transition: {
       duration: 0.25,
-      ease: "easeInOut"
-    }
-  }
+      ease: "easeInOut",
+    },
+  },
 }
 
 export default function ({
   title = "Rev Earth",
   img = {
     alt: "Milky",
-    src: "images/milky.jpg"
-  }
+    src: "images/milky.jpg",
+  },
 }: Props) {
   return (
     <motion.div
@@ -37,7 +37,7 @@ export default function ({
       initial="hidden"
       animate="visible"
       transition={{
-        duration: 100
+        duration: 100,
       }}
     >
       <img

@@ -14,12 +14,12 @@ export default function ({
   right = false,
   bottom = false,
   children,
-  className = ""
+  className = "",
 }: Props) {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress, scrollY } = useScroll({
     target: ref,
-    offset: ["start end", "end end"]
+    offset: ["start end", "end end"],
   })
 
   const xStart = left ? window.innerWidth : -window.innerWidth
@@ -170,12 +170,12 @@ export default function ({
 
   const xs = useSpring(left ? xLeft : xRight, {
     damping: 50,
-    stiffness: 100
+    stiffness: 100,
   })
 
   const ys = useSpring(!bottom ? yBottom : yTop, {
     damping: 50,
-    stiffness: 100
+    stiffness: 100,
   })
 
   return (
@@ -185,7 +185,7 @@ export default function ({
         className={"relative " + className}
         style={{
           x: bottom ? 0 : xs,
-          y: bottom ? ys : 0
+          y: bottom ? ys : 0,
         }}
       >
         {children && children}
